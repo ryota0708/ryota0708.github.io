@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate"><!--英語を無変換コード-->
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--ヘッダー-->
+    <div class="top">
+        <img src="img/mv_logo.png" alt="logo">
+        <header>
+            <ul>
+                <li>01 CONCEPT</li>
+                <li>02 CAFE</li>
+                <li>03 HAIR SALON</li>
+                <li>04 NEWS</li>
+                <li>05 SHOP INFORMATION</li>
+                <li class="blog"><a href="#">BLOG</a></li>
+            </ul>
+        </header>
+        <div><img src="img/logo_bottom.png" alt="logo2"></div>
+    </div>
+    <!--スライド-->
+    <div class="pic">
+        <ul class="slick01 slick-slider slide">
+            <li class="item"><img src="img/mv_bg01.jpg" alt="1"></li>
+            <li class="item"><img src="img/mv_bg02.jpg" alt="2"></li>
+            <li class="item"><img src="img/mv_bg03.jpg" alt="3"></li>
+            <li class="item"><img src="img/mv_bg04.jpg" alt="4"></li>
+        </ul>
+        <p class="scroll"><a href="#">↓scroll</a></p>
+    </div>
+    <!--斜線-->
+    <div class="line"><span style="top: 110px;"></span></div>
+    <div class="line2"><span style="top: 2626px;"></span></div>
+    <!--コンセプト-->
+    <div class="container">
+        <div class="concept-top">
+            <h1>CONCEPT</h1>
+            <div class="img"><img src="img/concept_ttl_num.png" alt="01"></div>
+        </div>
+        <div class="container-box">
+            <div class="concept-main">
+                <p class="main-start">そこから何かが始まる場所</p>
+                <p class="main-main">
+                    人＋人<br>
+                    人＋モノ<br>
+                    モノ＋モノ
+                </p>
+                <p class="main-main">
+                    全ては原理原則に沿った判断基準の中で<br>
+                    本物のモノを作りたい…
+                </p>
+                <p class="main-main">
+                    SIGNS PLUSは「一つのsign（旗印）に色んな方々が<br>
+                    集まる空間を創る」<br>
+                    をコンセプトに新しい価値とコミュニケーションを生<br>
+                    み出す場所です。
+                </p>
+            </div>
+            <div class="img-store"><img src="img/concept_bg01.jpg" alt="店"></div>
+        </div>
+    </div>
+    <!--CAFE-->
+    <div class="container">
+        <div class="concept-top2">
+            <div class="img-2"><img src="img/cafe_ttl_num.png" alt="02"></div>
+            <h1>CAFE</h1>
+        </div>
+        <!--CAFEslide-->
+        <div class="container-box2">
+            <div class="img-store2">
+                <!-- スライダーのメインコンテナの div 要素 -->
+                <div class="slide-container"> 
+                        <!-- ラッパーの（スライドを囲む）  要素 -->
+                    <ul class="slide-wrapper"> 
+                        <!-- それぞれのスライドの div 要素 -->
+                        <li><img src="img/cafe_bg01.jpg" alt=""></li>
+                        <li><img src="img/cafe_bg02.jpg" alt=""></li>
+                        <li><img src="img/cafe_bg03.jpg" alt=""></li>
+                    </ul>
+                </div>     
+
+                    <div class="cafe-menu">
+                        <div class="menu-box">
+                            <div class="menu">
+                                <ul class="slider-nav">
+                                    <li id="1">アラカルト</li>
+                                    <li id="2">サンドイッチ</li>
+                                    <li id="3">テイクアウト</li>
+                                    <li id="4">オードブル</li>
+                                </ul>
+                            </div>
+                            <div class="cafe-slide">
+                                <ul class="slider-for">
+                                    <li id="1"><!--アラカルト-->
+                                        <div class="title">
+                                            <p>週末はテイクアウト・オードブルで混雑しますので、
+                                                ランチはご予約制にしております。よろしくお願い致します。</p>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/soupcurry.jpg" alt="スープカレー">
+                                            <div class="price">
+                                                <p>スープカレー¥1,200(1,320)</p>
+                                                <p>サラダ・前菜から1品、羽釜炊き白米or厚切りトースト（+¥165）</p>
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/croquemonsieur.jpg" alt="クロックムッシュ">
+                                            <div class="price">
+                                                <p>Singsplus風クロックムッシュ¥1,000(¥1,100)</p>
+                                                <p>スープ・ドリンク付き</p>
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/roastbeef.jpg" alt="ローストビーフ">
+                                            <div class="price">
+                                                <p>黒毛和牛ローストビーフ丼¥1,490(¥1,639)</p>
+                                                <p>スープ付き、肉・ご飯の大盛り +¥550</p>
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/koreachicken.jpg" alt="韓国チキン">
+                                            <div class="price">
+                                                <p> 韓国チキン（5本）¥750(¥825)</p>
+                                                <p>ヤンニョム、カレー塩、はちみつ、黒胡麻南蛮、ハニーマスタード</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li id="2"><!--サンドイッチ-->
+                                        <div class="title">
+                                            <p>週末はテイクアウト・オードブルで混雑しますので、
+                                                ランチはご予約制にしております。よろしくお願い致します。</p>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/signs.jpg" alt="サンド">
+                                            <div class="price">
+                                                <p>signsサンド¥1,300(¥1430)</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/vegetable.jpg" alt="サンド">
+                                            <div class="price">
+                                                <p>ベジタブルサンド¥1,300(¥1430)</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/kaguyahime_egg.jpg" alt="卵サンド">
+                                            <div class="price">
+                                                <p>かぐや姫たまごサンド¥1,300(¥1,430)</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/tandoorichicken.jpg" alt="チキン">
+                                            <div class="price">
+                                                <p>タンドリーチキン¥1,400(¥1,540)</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="food">
+                                            <img src="img/ebikatu.jpg" alt="エビカツ">
+                                            <div class="price">
+                                                <p>特製えびカツ¥1,500(¥1,650)</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </li id="3"><!--テイクアウト-->
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li id="4"><!--オードブル-->
+                                    <li>
+                                        <img src="" alt="">
+                                        <p></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--menu-box-->
+                    </div><!--cafe-menu-->
+                 
+            </div><!--img-store2-->
+        </div><!--container-box-->
+    </div><!--container-->
+    <!--HAIR SALON-->
+    <div class="container container3">
+        <div class="concept-top concept-top3">
+            <h1>HAIR SALON</h1>
+            <div class="img"><img src="img/salon_ttl_num.png" alt="03"></div>
+        </div>
+        <div class="container-box container-box3"></div>
+            <div class="slide-container"> 
+                <!-- ラッパーの（スライドを囲む）  要素 -->
+                <ul class="slide-box"> 
+                    <!-- それぞれのスライドの div 要素 -->
+                    <li><img src="img/salon_bg01.jpg" alt=""></li>
+                    <li><img src="img/salon_bg02.jpg" alt=""></li>
+                    <li><img src="img/salon_bg03.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="women">
+                <div class="menu-box cut-box">
+                    <div class="sex">
+                        <h1>WOMEN</h1>
+                    </div>
+                    <div class="cut-menu">
+                        <ul>
+                            <li><span>cut</span><span>¥5,200（¥5,720）</span></li>
+                            <li><span>cut & color</span><span>¥15,500〜（¥17,050〜）</span></li>
+                            <li><span>cut & perm</span><span>¥16,500〜（¥18,150〜）</span></li>
+                            <li><span>cut & straight perm</span><span>¥25,000〜（¥27,500〜）</span></li>
+                            <li><span> color</span><span>¥12,800〜（¥14,080〜）</span></li>
+                            <li><span>perm</span><span>¥13,800〜（¥15,180〜）</span></li>
+                            <li><span>straight perm</span><span>¥22,000〜（¥24,200〜）</span></li>
+                            <div class="cut-words">
+                                <p>※ color、perm、straight permのメニューには全てヘアケアシステム込み</p>
+                                <p>※ グレイカラーのリタッチカラーメンテナンス¥8,000〜（¥8,800〜）</p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--women-->
+            <div class="men">
+                <div class="menu-box cut-box">
+                    <div class="sex">
+                        <h1>MEN</h1>
+                    </div>
+                    <div class="cut-menu">
+                        <ul>
+                            <li><span>cut</span><span>¥4,800（¥5,280）</span></li>
+                            <li><span>cut & color</span><span>¥10,300〜（¥11,330〜）</span></li>
+                            <li><span>cut & perm</span><span>¥12,800〜（¥14,080〜）</span></li>
+                            <li><span>cut & straight perm</span><span>¥16,000〜（¥17,600〜）</span></li>
+                            <div class="cut-words">
+                                <p>※ color、perm、straight permのメニューには全てヘアケアシステム込み</p>
+                                <p>※ グレイカラーのリタッチカラーメンテナンス¥8,000〜（¥8,800〜）</p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="words">
+                    <p>※ 各種学割有り</p>
+                    <p>※ お客様との大切な時間を共有させて頂くため、完全予約制とさせて頂きます。</p>
+                    <p>※ メニューの詳細はお問い合わせ下さい。</p>
+                </div>
+            </div><!--men-->
+        </div><!--container-box3-->        
+    </div><!--container3-->
+   <!--news-->
+   <div class="news">
+       <div class="news-title">
+            <div>
+                <h1>NEWS</h1>
+            </div>
+            <div>
+                <img src="img/news_ttl_num.png" alt="04">
+            </div>
+       </div>
+       <div class="news-container">
+            <div class="top-place">
+                <div class="left-top news-box left">
+                    <a href="#">
+                        <div><img src="img/news_noimage.jpg" alt="footer-logo"></div>
+                        <div>
+                            <p class="date">2021.08.06</p>
+                            <p>8月の定休日のご案内です</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="right-top news-box right">
+                    <a href="#">
+                        <div><img src="img/IMG_4015-e1509001419246-768x1024.jpg" alt="footer-logo"></div>
+                        <div>
+                            <p class="date">2021.07.04</p>
+                            <p>7月の定休日のご案内です</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--top-place-->
+            <div class="bottom-place">
+                <div class="news-box left-bottom left">
+                    <a href="#">
+                        <div><img src="img/image-1-1024x876.png" alt="footer-logo"></div>
+                        <div>
+                            <p class="date">2021.08.04</p>
+                            <p>hair salon求人情報</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news-box right-bottom right">
+                    <a href="#">
+                        <div><img src="img/IMG_4581.jpg" alt="footer-logo"></div>
+                        <div>
+                            <p class="date">2021.06.02</p>
+                            <p>6月の定休日のご案内</p>
+                        </div>
+                    </a>
+                </div>
+            </div><!--bottom-place-->
+       </div><!--news-container-->
+       <div class="read-more">
+            <a href="#">READ MORE →</a>
+       </div>
+    </div><!--news-->
+
+    <!--shopInfo-->
+    <div class="shopInfo">
+        <div id="map"></div><!--マップ-->
+        <div class="shopInfo-main">
+            <div class="shopInfo-box">
+                <div class="shopInfo-title">
+                   <div>
+                       <h2>SHOP INFORMATION</h2>
+                   </div>
+                   <div>
+                       <img src="img/access_ttl_num.png" alt="05">
+                    </div>
+                </div><!--shopInfo-title-->
+                <div class="shopInfo-logo">
+                    <h4>SIGNS PLUS+</h4>
+                </div>
+                <div class="adress">
+                    <p>〒 860-0055</p>
+                    <p>熊本市西区蓮台寺5丁目3-40</p>
+                    <p>HAIR SALON.096-327-9814</p>
+                    <p>CAFE.096-327-9824</p>
+                </div>
+                <dl class="open">
+                    <dt>OPEN</dt>
+                    <dd>
+                        <span>HAIR SALON</span>/ 10:00～18:00<br>
+                        <span>CAFE</span>/ 11:00～21:30(LO 21:00)
+                    </dd>
+
+                    <dt>HOLIDAY</dt>
+                    <dd>
+                        <span>HAIR SALON</span>/ 毎週月曜日、第1・2・3火曜日<br>
+                        <span>CAFE</span>/ 毎週月・金曜日、第1・3日曜日
+                    </dd>
+                    </dl>
+                <a href="#"><div id="target">OFFICIAL BLOG<span> →</span></div></a>
+            </div><!--shopInfo-box-->
+        </div><!--shopInfo-main-->
+    </div><!--shopInfo-->
+    <footer>
+        <div class="footer">
+            <div class="footer-logo"><img src="img/footer_logo.png" alt=""></div>
+            <div class="sns">
+                <ul class="follow-me">
+                    <li><a href="#"><i class="fab fa-facebook-f fa-lg size" style="color:white;"></i></a>
+                    <li><a href="#"><i class="fab fa-instagram fa-lg size" style="color:white;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-line fa-lg size" style="color:white;"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-words"><p>Copyright © 2016 SIGNS PLUS+ All Rights Reserved.</p></div>
+        </div>
+    </footer>
+   
+
+    <!--並び方重要-->
+   
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!--ｊQueryはこのバージョンでないとズームフェードアウトが２周目機能しない-->
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.6/swiper-bundle.js"></script>
+    <script src="js/cafe&hairsalonjs.js"></script>
+</body>
+</html>
