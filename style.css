@@ -1,0 +1,672 @@
+@charset "UTF-8";
+/*横スクロール分の横幅非表示*/
+/*body{
+    overflow-x: hidden;
+    overflow-y:scroll;
+}*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*ヘッダー*/
+.top {
+  background-color: black;
+  height: 768px;
+}
+.top img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.top header {
+  position: fixed;
+  margin-left: 250px;
+  z-index: 10;
+}
+.top header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.top header ul li {
+  float: left;
+  font-family: Oswald, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 25px;
+  z-index: 5;
+  position: relative;
+  top: -200px;
+}
+.top header ul .blog {
+  border: solid 1px #000000;
+  padding: 5px;
+}
+.top div {
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  right: 45px;
+}
+.top div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*スライド*/
+.pic {
+  /*画面いっぱいにする*/
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  z-index: 3;
+}
+.pic ul {
+  margin: 0;
+  padding: 0;
+}
+.pic ul img {
+  width: 100%;
+}
+.pic .scroll {
+  text-align: center;
+  justify-items: center;
+  font-size: 12px;
+  margin: 0;
+}
+.pic .scroll a {
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+/*ズームアウト*/
+.slide-animation {
+  animation: fadeout 5s 0s forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*コンセプト*/
+.container {
+  padding-top: 50px;
+  text-align: center;
+  /*cafe(2)*/
+  /*concept*/
+}
+.container .concept-top {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+.container .concept-top h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 42px;
+  font-weight: 400px;
+  line-height: 42px;
+  height: 80px;
+}
+.container .concept-top .img {
+  margin-left: 100px;
+  z-index: -3;
+}
+.container .concept-top2 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 400px;
+}
+.container .concept-top2 h1 {
+  font-style: normal;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  font-size: 42px;
+  font-weight: 400px;
+  line-height: 42px;
+  height: 80px;
+  width: 170px;
+}
+.container .concept-top2 .img-2 {
+  margin-right: 100px;
+  z-index: -3;
+}
+.container .concept-top2 .img-store2 {
+  z-index: -2;
+}
+.container .container-box {
+  height: 500px;
+}
+.container .concept-main {
+  background-color: white;
+  z-index: -1;
+  display: inline-block;
+  text-align: left;
+  padding: 60px 10px 60px 40px;
+  margin-left: 777px;
+}
+.container .concept-main .main-start {
+  font-size: 19px;
+}
+.container .concept-main .main-main {
+  font-size: 14px;
+}
+.container .img-store {
+  position: relative;
+  bottom: 525px;
+  z-index: -2;
+}
+
+/*斜線背景*/
+.line span {
+  z-index: -4;
+  width: 970px;
+  height: 2800px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 113%;
+  margin-left: -700px;
+  -webkit-transform: skewX(-47deg);
+  transform: skewX(-47deg);
+  background: #2f2f2f;
+}
+
+.line2 span {
+  z-index: -4;
+  width: 970px;
+  height: 2800px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 113%;
+  margin-left: -1270px;
+  -webkit-transform: skewX(47deg);
+  transform: skewX(47deg);
+  background: #2f2f2f;
+}
+
+/*CAFEslide*/
+.img-store2 {
+  width: 100%;
+}
+
+.slide-container {
+  position: relative;
+  bottom: 80px;
+  margin: 0 0 0 130px;
+}
+.slide-container .slick-dots li {
+  padding: 0 10px;
+  margin: 0 5px;
+  position: relative;
+  top: 20px;
+  right: 50px;
+  z-index: 20;
+}
+.slide-container .slick-dots li button:before {
+  width: 100%;
+  height: 0.5px;
+  display: block;
+  background-color: #000;
+  content: "";
+  z-index: 20;
+}
+.slide-container .slick-dotsItem:before {
+  background: url("/img/pager_ico_active.png") no-repeat;
+  width: 100%;
+  height: 0.5px;
+  display: block;
+  content: "";
+  z-index: 20;
+}
+
+/*アラカルト*/
+.cafe-menu {
+  background-color: #F0F0F0;
+  padding: 100px 50px 70px 50px;
+  max-width: 1060px;
+  position: relative;
+  left: 170px;
+  bottom: 110px;
+}
+.cafe-menu .menu-box {
+  background-color: white;
+  padding: 300px 50px 500px 50px;
+}
+.cafe-menu li {
+  list-style: none;
+}
+.cafe-menu .menu {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  background-color: black;
+}
+.cafe-menu .menu ul {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+}
+.cafe-menu .menu ul li {
+  padding: 20px 150px 20px 20px;
+  font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+  font-size: 19px;
+  line-height: 31px;
+  color: white;
+  text-align: left;
+}
+.cafe-menu .cafe-slide .slider-for {
+  position: absolute;
+  top: 135px;
+  right: 100px;
+  width: 55%;
+  height: 70%;
+  /*スクロール*/
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: solid 1px black;
+}
+.cafe-menu .cafe-slide .slider-for li .title {
+  text-align: left;
+  padding: 20px 40px 0px 40px;
+}
+.cafe-menu .cafe-slide .slider-for li p {
+  font-family: 游ゴシック, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ＭＳ ゴシック", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+.cafe-menu .cafe-slide .slider-for li .food {
+  display: flex;
+}
+.cafe-menu .cafe-slide .slider-for li .food img {
+  padding: 20px;
+  width: 35%;
+  height: 35%;
+}
+.cafe-menu .cafe-slide .slider-for li .price {
+  margin: auto 0;
+  text-align: left;
+}
+.cafe-menu .cafe-slide .slider-for li .price p:first-child {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+/*HAIR SALON*/
+.container3 {
+  position: relative;
+  bottom: 150px;
+}
+.container3 h1 {
+  color: #fff;
+}
+
+.container-box3 {
+  position: absolute;
+}
+
+/*クリックイベント*/
+.current {
+  background-color: white;
+  color: black !important;
+}
+
+.women {
+  background-color: #F0F0F0;
+  padding: 100px 50px 10px 50px;
+  max-width: 1060px;
+  position: relative;
+  left: 170px;
+  bottom: 110px;
+}
+.women .menu-box {
+  background-color: white;
+  padding: 300px 50px 500px 50px;
+}
+.women li {
+  list-style: none;
+}
+
+.cut-box {
+  position: relative;
+}
+
+.sex {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+.sex h1 {
+  color: black;
+  font-family: Lato, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+  line-height: 32px;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.cut-menu {
+  position: absolute;
+  left: 550px;
+  bottom: 45%;
+}
+.cut-menu .cut-words {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  line-height: 19px;
+  color: #7f7f7f;
+  font-style: normal;
+  font-weight: 400;
+}
+.cut-menu ul {
+  text-align: left;
+}
+.cut-menu li {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: bold;
+}
+.cut-menu span:first-child {
+  margin-right: 50px;
+}
+.cut-menu span:not(:first-child) {
+  float: right;
+}
+
+.men {
+  background-color: #F0F0F0;
+  padding: 0px 50px 150px 50px;
+  max-width: 1060px;
+  position: relative;
+  left: 170px;
+  bottom: 110px;
+}
+.men .menu-box {
+  background-color: white;
+  padding: 300px 50px 500px 50px;
+}
+.men .cut-menu {
+  position: absolute;
+  left: 550px;
+  bottom: 60%;
+}
+.men li {
+  list-style: none;
+}
+.men .words {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7f7f7f;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.news {
+  background: #232323;
+  padding: 90px 0 200px 0;
+}
+.news .news-title {
+  position: relative;
+}
+.news .news-title h1 {
+  color: white;
+  font-family: Oswald, sans-serif;
+  line-height: 34px;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  left: 12%;
+  bottom: -60px;
+  z-index: 1;
+}
+.news .news-title img {
+  position: absolute;
+  left: 18%;
+  bottom: -40px;
+}
+
+.news-container {
+  display: table;
+  position: relative;
+  left: 10%;
+  bottom: -100px;
+  width: 80%;
+}
+.news-container .top-place {
+  display: table-cell;
+}
+.news-container .bottom-place {
+  display: table-cell;
+}
+.news-container .left {
+  margin-right: 50%;
+}
+.news-container .news-box {
+  display: table;
+}
+.news-container .news-box div:nth-child(1) {
+  padding-right: 30px;
+  display: table-cell;
+}
+.news-container .news-box div:nth-child(2) {
+  display: table-cell;
+  position: relative;
+}
+.news-container .news-box img {
+  width: 120px;
+  height: 120px;
+}
+.news-container .news-box p {
+  color: white;
+  position: relative;
+  bottom: 80px;
+}
+.news-container .news-box .date {
+  font-weight: bold;
+}
+
+.read-more {
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  left: 42%;
+  top: 100px;
+  padding: 15px 70px;
+}
+.read-more a {
+  font-style: normal;
+  font-weight: 600;
+}
+
+#map {
+  border: 1px solid #BDBDBD;
+  height: 600px;
+  margin: 0;
+  filter: grayscale(100%);
+}
+
+.shopInfo {
+  position: relative;
+  font-family: Oswald, sans-serif;
+  font-style: normal;
+}
+.shopInfo .shopInfo-main {
+  width: 410px;
+  height: 510px;
+  display: inline-block;
+  z-index: 1000;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  background-color: white;
+  text-align: left;
+}
+.shopInfo .shopInfo-main .shopInfo-box {
+  box-sizing: border-box;
+  margin: 60px 35px 0px 35px;
+}
+.shopInfo .shopInfo-main .shopInfo-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.shopInfo .shopInfo-main .shopInfo-title div:nth-child(1) h2 {
+  font-size: 24px;
+  height: 24px;
+  font-weight: bold;
+  width: 330px;
+  margin: 60px 0px 30px 0;
+}
+.shopInfo .shopInfo-main .shopInfo-title div:nth-child(2) {
+  position: absolute;
+  top: -3%;
+  left: 68%;
+}
+.shopInfo .shopInfo-main .shopInfo-logo h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.shopInfo .shopInfo-main .open {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: Oswald, sans-serif;
+}
+.shopInfo .shopInfo-main .open dt {
+  font-weight: 600;
+  width: 65px;
+}
+.shopInfo .shopInfo-main .open dt:nth-child(1) {
+  float: left;
+  height: 42px;
+}
+.shopInfo .shopInfo-main .open span {
+  display: inline-block;
+  width: 90px;
+}
+.shopInfo .shopInfo-main .open dd {
+  line-height: 22px;
+  text-align: left;
+  /*(dd)margin-inline-start: 40px;上書き*/
+  margin: 0 0 2px;
+}
+
+.shopInfo-box #target {
+  background: black;
+  text-align: center;
+  width: 330px;
+  height: 54px;
+  margin-top: 50px;
+  animation: close-menu 0.3s forwards;
+}
+.shopInfo-box #target span {
+  display: inline-block;
+  animation: anim2 1m forwards;
+}
+.shopInfo-box #target:hover {
+  /*この形でないとspan効かない*/
+  animation: open-menu 0.3s forwards;
+}
+.shopInfo-box #target:hover span {
+  display: inline-block;
+  animation: anim 1s forwards;
+}
+.shopInfo-box a {
+  color: white;
+  line-height: 54px;
+  animation: close-menu 0.3s forwards;
+}
+@keyframes open-menu {
+  0% {
+    background: black;
+    color: white;
+  }
+  100% {
+    background: white;
+    color: black;
+  }
+}
+@keyframes close-menu {
+  0% {
+    background: white;
+    color: black;
+  }
+  100% {
+    background: black;
+    color: white;
+  }
+}
+@keyframes anim {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes anim2 {
+  0% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+footer {
+  background-color: black;
+}
+footer .footer {
+  text-align: center;
+}
+footer .footer .footer-logo {
+  padding-top: 70px;
+}
+footer .footer p {
+  color: white;
+  font-size: 11px;
+}
+footer .footer .sns ul {
+  list-style: none;
+  margin-right: 40px;
+}
+footer .footer .sns ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
